@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="names">
+        <item>杨帅1</item>
+        <item>杨帅2</item>
+        <item>杨帅3</item>
+        <item>杨帅4</item>
+        <item>杨帅5</item>
+    </string-array>
+</resources>
