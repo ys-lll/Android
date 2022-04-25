@@ -3,6 +3,7 @@ package com.example.a20220419demo;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.Canvas;
 import android.os.Bundle;
 import android.os.Handler;
@@ -173,7 +174,16 @@ public class SecondActivity extends Activity {
                         }
                     });
 
+                }else if (i == 1){
+                    Intent intent = new Intent(SecondActivity.this, ThirdActivity.class);
+                    Bundle bundle = new Bundle();
+                    bundle.putCharSequence("message","通过bundle传过来的数据");
+                    intent.putExtras(bundle);
+
+                    startActivity(intent);
                 }
+
+
                 int a = i + 1;
                 Toast.makeText(SecondActivity.this, "您选择了第" + a + "项", Toast.LENGTH_SHORT).show();
             }
