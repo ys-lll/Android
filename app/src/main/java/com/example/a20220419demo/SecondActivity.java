@@ -23,6 +23,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -179,6 +180,16 @@ public class SecondActivity extends Activity {
                     Bundle bundle = new Bundle();
                     bundle.putCharSequence("message","通过bundle传过来的数据");
                     intent.putExtras(bundle);
+
+                    startActivity(intent);
+                }else if (i == 2){
+                    Intent intent = new Intent(SecondActivity.this,fourthActivity.class);
+                    Bundle bundle = new Bundle();
+                    bundle.putSerializable("Serializable","Serializable类型数据");
+                    intent.putExtra("int",1);
+                    intent.putExtra("byte",'c');
+                    intent.putExtras(bundle);
+
 
                     startActivity(intent);
                 }

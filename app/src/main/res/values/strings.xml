@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">20220419demo</string>
+    <string name="int_Type">int类型:</string>
+    <string name="byte_Type">byte类型:</string>
+    <string name="Serializable_Type">Serializable类型:</string>
 </resources>
