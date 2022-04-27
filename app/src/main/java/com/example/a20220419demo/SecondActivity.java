@@ -192,6 +192,9 @@ public class SecondActivity extends Activity {
 
 
                     startActivity(intent);
+                }else if (i == 3){
+                    Intent intent = new Intent(SecondActivity.this,FifthActivity.class);
+                    startActivity(intent);
                 }
 
 
