@@ -195,8 +195,10 @@ public class SecondActivity extends Activity {
                 }else if (i == 3){
                     Intent intent = new Intent(SecondActivity.this,FifthActivity.class);
                     startActivity(intent);
+                }else if (i == 4){
+                    Intent intent = new Intent(SecondActivity.this,SixthActivity.class);
+                    startActivity(intent);
                 }
-
 
                 int a = i + 1;
                 Toast.makeText(SecondActivity.this, "您选择了第" + a + "项", Toast.LENGTH_SHORT).show();

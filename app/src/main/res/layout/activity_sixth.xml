@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bill"
+            android:text="记账:">
+        </TextView>
+        <EditText android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/billtext">
+        </EditText>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/price"
+            android:text="金额:">
+        </TextView>
+        <EditText android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/pricetext">
+        </EditText>
+    </TableRow>
+    <TableRow>
+        <Button android:id="@+id/add"
+            android:text="提交"></Button>
+    </TableRow>
+    <ListView android:id="@+id/priceList"
+        android:layout_width="match_parent">
+    </ListView>
+
+</TableLayout>

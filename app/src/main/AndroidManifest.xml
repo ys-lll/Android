@@ -24,6 +24,7 @@
         <activity android:name=".RightFragActivity"></activity>
         <activity android:name=".fourthActivity"></activity>
         <activity android:name=".FifthActivity"></activity>
+        <activity android:name=".SixthActivity"></activity>
     </application>
 
 </manifest>
