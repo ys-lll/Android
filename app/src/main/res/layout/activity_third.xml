@@ -11,20 +11,20 @@
         class="com.example.a20220419demo.LeftFragment">
 
     </fragment>
-    <fragment
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:layout_height="match_parent"
-        android:id="@+id/rightfragment"
-        class="com.example.a20220419demo.RightFragment">
-
-    </fragment>
-<!--    <FrameLayout-->
+<!--    <fragment-->
 <!--        android:layout_width="0dp"-->
-<!--        android:layout_height="match_parent"-->
 <!--        android:layout_weight="1"-->
-<!--        android:id="@+id/rightLayout">-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:id="@+id/rightfragment"-->
+<!--        class="com.example.a20220419demo.RightFragment">-->
 
-<!--    </FrameLayout>-->
+<!--    </fragment>-->
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/rightLayout">
+
+    </FrameLayout>
 
 </LinearLayout>

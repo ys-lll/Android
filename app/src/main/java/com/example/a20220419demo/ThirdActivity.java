@@ -22,29 +22,11 @@ public class ThirdActivity extends Activity {
         Bundle bundle = intent.getExtras();
         String str = bundle.getString("message");
 
-        SeekBar seek = findViewById(R.id.seekBar);
-        seek.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-            @Override
-            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
-                setAppScreenBrightness(i);
-            }
-
-            @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {
-
-            }
-
-            @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
-
-            }
-        });
-
     }
 
     /**
      * 2.设置 APP界面屏幕亮度值方法
-     * **/
+     **/
     private void setAppScreenBrightness(int birghtessValue) {
         Window window = getWindow();
         WindowManager.LayoutParams lp = window.getAttributes();
