@@ -3,6 +3,7 @@ package com.example.a20220419demo;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.Canvas;
 import android.os.Bundle;
 import android.os.Handler;
@@ -22,6 +23,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -173,7 +175,37 @@ public class SecondActivity extends Activity {
                         }
                     });
 
+                }else if (i == 1){
+                    Intent intent = new Intent(SecondActivity.this, ThirdActivity.class);
+                    Bundle bundle = new Bundle();
+                    bundle.putCharSequence("message","通过bundle传过来的数据");
+                    intent.putExtras(bundle);
+
+                    startActivity(intent);
+                }else if (i == 2){
+                    Intent intent = new Intent(SecondActivity.this,fourthActivity.class);
+                    Bundle bundle = new Bundle();
+                    bundle.putSerializable("Serializable","Serializable类型数据");
+                    intent.putExtra("int",1);
+                    intent.putExtra("byte",'c');
+                    intent.putExtras(bundle);
+
+
+                    startActivity(intent);
+                }else if (i == 3){
+                    Intent intent = new Intent(SecondActivity.this,FifthActivity.class);
+                    startActivity(intent);
+                }else if (i == 4){
+                    Intent intent = new Intent(SecondActivity.this,SixthActivity.class);
+                    startActivity(intent);
+                }else if (i == 5){
+                    Intent intent = new Intent(SecondActivity.this,SeventhActivity.class);
+                    startActivity(intent);
+                }else if (i == 6){
+                    Intent intent = new Intent(SecondActivity.this,EighthActivity.class);
+                    startActivity(intent);
                 }
+
                 int a = i + 1;
                 Toast.makeText(SecondActivity.this, "您选择了第" + a + "项", Toast.LENGTH_SHORT).show();
             }
